@@ -387,94 +387,6 @@ nav a.active {
 
 }
 
-
-/* =====================================================
-   AVATAR
-===================================================== */
-
-.hero-image {
-    width: 190px;
-    align-self: center;
-    justify-self: center;
-}
-
-
-/* 背景圆 */
-.avatar-wrap {
-    width: 180px;
-    height: 180px;
-    position: relative;
-    margin: 0 auto;
-}
-
-
-/* 浅灰色背景圆 */
-.avatar-bg {
-    position: absolute;
-
-    width: 170px;
-    height: 170px;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
-    border-radius: 50%;
-
-    background: #f1f1f1;
-    border: 1px solid #e2e2e2;
-}
-
-
-/* 实际照片 */
-.avatar-photo {
-    position: absolute;
-
-    width: 175px;
-    height: 175px;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
-    border-radius: 50%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition: transform 0.4s ease;
-}
-
-
-/* 鼠标悬停 */
-.avatar-wrap:hover .avatar-photo {
-    transform: translate(-50%, -50%) scale(1.03);
-}
-
-
-/* 照片下面的文字 */
-.avatar-caption {
-    width: 170px;
-
-    margin: 15px auto 0;
-
-    padding-top: 12px;
-
-    border-top: 1px solid #e5e5e5;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    font-size: 9px;
-
-    letter-spacing: 1.3px;
-
-    color: #999;
-}
 /* Hero bottom */
 
 .hero-bottom {
@@ -931,23 +843,50 @@ footer {
     }
 }
 
-/* ===== AVATAR TEST ===== */
+/* ===== Avatar ===== */
 .avatar-wrap {
     width: 120px !important;
     height: 120px !important;
+    position: relative;
+    margin: 0 auto;
 }
 
 .avatar-bg {
+    position: absolute;
     width: 100px !important;
     height: 100px !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 1px solid #e2e2e2;
 }
 
 .avatar-photo {
+    position: absolute;
     width: 105px !important;
     height: 105px !important;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%) !important;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 
 .avatar-wrap:hover .avatar-photo {
     transform: translate(-50%, -50%) !important;
+}
+
+.avatar-caption {
+    width: 100px !important;
+    margin: 15px auto 0;
+    padding-top: 12px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    color: #999;
 }
